@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.d5cf6afd.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA+ZJREFUWEfFV0loG2cU/t7MdAZ5UQONI8nkEAjuKaQJgUAWiO1mw7Tk1B5KL03pqQW3aSU5y0GBbI6Ms1ziUy691fRYnLiOBU2THkppCZRC6oBTsC1FsmNJViRZo3lhJFvWMppFSdu5Se9/733ve8v/foLdL8SyL5vqK4L6CbwbjG1EtElXZ+ZlkDDL4N9FjSML7e5phGjVjmmyOtTlX/GKpJ0C8UmA3rI6vyZfBON2kYXReLgjaqbTHEAoInlf7PkahHMAOmw6rjvGGQZdiLk6RxAi1ciGIYBS1II2DuBga47rtehnNZ/7MHG9a6FBUv/HFv/ydkGgKYC2vR7nFSuzmqYdfhbe9KTabg0D5ciLv/wLztd9zqr5/P5qJjYA6DnP7ok4pb2rg3DiHQm7tkrsdhEKRcZShjG3zBi7n6dcoZZHZjyItXX2rtdEBYA3kAqCcMUJ7R/vfQPn31PQJhvX8s6LKxxPc4OQgdOxYXfJV0m4VnR/O6n2Ezsl3PrIVTbQ5GsGAOCMKq72JC51LZT0vYHUVRD8dqOXBODXoXZ43YKpSnMAJbWR6LDbTwix7M2m5h0MGezfLvH3n7kagp9Papj8q8jpnFaS3ZheRab5PFyMujq7yRdMHmPQHbvR6+c+PSDzhfeVGgD/PNdw5MYLpHLswBQP0JZgalgAAg60MNgnY+iYUqMydr/A53/IWY72GiVGmDzB5CSBjrwqgPCPeR69t+oIAIOmyBNIPiainv8HAGbIG0w90zvRCgABleQO9ssUPFqbgpEyA3UMm3apPgUStgCcPS7j815lo7oYRHVksy6lDZCPYxp6r2WsUrJoKwU6gC96ayO2YmziT5VPfps1BcDADHmC6UkCmxZhKwBuRvK4fNd8KSoVoZ02bAXA4HiOv/utYJECbYR8/uRxFmjCjNKBHRL63hYrR3Z0i9i1deO3Lng0p/GjObXicOynAp4kNItM8cDaKE7PA7C77xkOIsdzgLEUzca6W7qMjCahYwCVy6hyHRdnAGq3qm5d/hoAZFRR7Elcai9fx/rnCS4PEYTL/wUAZpyJXXWXfFWtZCx5sysRgC034VdhgMEPYy73oYaVTEez+cu4T1KUhwBMN+KWATCeqpK4T6d+nemGPi2v5cKUGYiWADCeFgt8OH7tzZnqNBsOCp0JUVbGiXDAqCacAmDCg6IgflAdeVMGKg5DLHmy6W8IfK6+OxwAyDDjYqytM+zoaVYd9eYzcZ9UUE5BwCfrw8oSAGMJhNuqKI4aRW2ZAsNW1J/nuUw/a1p/4Ki8+6t3Fb1Q9ee5nsbn1yP52eGJ3B8QaDrqct+z+zx/CRb/0bLGSts3AAAAAElFTkSuQmCC">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAgBJREFUOE+Fk89LVFEUx79nXijzmlFo88yFGAUWFEEuauOmFrYxKKi/IKtFxbRxijbTSsaFJkrEYLRo1Q8ohBZKSJRkgQsJQSExa1G+hVBv1Jcz3veN92Pee76aurt77zmfe7/fc44gsVpvWQeVw0uAnATQ7l/LCsApLYXSt/6mxXiKhJsCGwx7vSjkNQi0JDjYK0JGzHQmj4JUPLR3UWBDi22NA9JdJzFxLBOr6cwZF+IBjHx5SMBcMtnICm52N+JY2y4qh3g4U8WjD34OwWGz2JwTV7OjMJ/8ths1eV3H4dZIzf23Fd55uVWTrYRyRIz8z0GB3Ei+3tGi8XVO94JfLW7jwbsKvqw5+LzGMJTAkBh5a06Ao0nA8XYNL67o3vH5MZvTS9uR4UEwiY8u4IcAzQkAT+zT5PllH3CutMmZZRWZXgMA1h+ArgManlzUSUIkeJMExHX52S88nq2GP6EPKM8JGEoIAH+tZs+9Dcx+dSIPAgmDAoQm7tkt6GxLocPQcPt0oxfcP7HFhVUl00sKdjVik7zrl9HBPLCz++Imni1t8v2ySprol7FeI/0PQMiwWczmYq28Pg4wbOV/AQhOmummnrCVa/Ng2NaAQK66cuoA3GEaNdOZvp3DFPN8b1/5kCPs7dqvnXraq3vjfGFsY+XNJzWVQqr0fSC7EC/Rb/LA5QR9MA2JAAAAAElFTkSuQmCC">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <title>Facebook-log in or sign up</title>
+  <link rel="stylesheet" href="/assets/index.f13948fa.css">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container flex  mx-auto pl-[5px] xl:pl-[115px] md:pl-[20px] ">
+
+        <div class="left w-[600px] my-44 pr-24">
+
+            <img class="w-[290px] sm:w-[300px] " src="/assets/facebook.9531e960.svg" alt="">
+
+            <p class="text-[27px] leading-[33px] font-normal pl-7 -mt-3 tracking-tight w-[460px] sm:w-[550px] sm:text-[30px] ">Facebook helps you connect and share with the
+                people in your life.</p>
+
+        </div>
+
+        <div class="right my-32 bg-white rounded-lg border border-gray-200 drop-shadow-2xl -ml-[95px] sm:ml-[8px]">
+
+            <div class="page flex flex-col m-4">
+
+            <input class="w-[365px] outline-blue-400 border-[1px] outline-[1px] border-gray-300 rounded-md p-[12px] text-[18px] mb-3" type="text" placeholder="Email address or phone number">
+
+            <input class="w-[365px] outline-blue-400 border-[1px] outline-[1px] border-gray-300 rounded-md p-[12px] text-[18px]" type="password" placeholder="Password">
+
+            <button class="bg-blue-600 font-bold text-white text-[20px] leading-[18px] mt-4 p-4 rounded-md hover:bg-blue-500">Log in</button>
+            
+            <a class="text-blue-700 mt-3 text-center hover:underline mb-4 tracking-tighter text-[15px]" href="#Forgotten password">Forgotten password?</a>
+
+            <p class=" border border-1px"></p>
+
+            <button class="mt-6 mb-3 bg-green-700 py-[9px] px-[20px] text-[18px] tracking-tight text-white font-bold rounded-lg mx-auto w-fit hover:bg-green-600">Create New Account</button>
+
+            <span class="text-sm absolute -bottom-12 pl-7"><span class="font-bold cursor-pointer">Create a Page</span> for a celebrity, brand or business.</span>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
